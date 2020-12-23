@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* header styling */
+
+header {
+    background-color: slategrey;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    display: inline;
+    background-color: cornsilk;
+    width: 30%;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav {
+    float: right;
+    margin: 10px 0;
+}
+
+header ul li {
+    display: inline;
+}
+/* hero styling */
+
+.hero {
+    display: flex;
+
+}
