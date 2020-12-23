@@ -66,22 +66,67 @@ header nav ul li a {
     padding: 7px;
 }
 
-/* About me */
+/* About me / general formatting for catagories */
+
+.catagory {
+    padding: 10px;
+}
+
+.catagory h2 {
+    float: left;
+    padding: 10px;
+}
+
+.catagory div {
+    font-size: 12px;
+    border-left: 2px var(--bColor) solid;
+    text-align: left;
+    overflow: auto;
+    padding: 10px;
+}
 
 /* Work class */
 
+.catagory h2 {
+    padding: 20px;
+}
 .workLinks {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
     grid-gap: 20px;
     grid-auto-flow: dense;
 }
 
+.grid {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.tiger {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
 .workLinks div {
     display: flex;
-    justify-content: right;
+    /* position: absolute; */
     align-items: baseline;
     background-color: var(--bColor);
     border: 3px solid var(--bColor);
+}
+
+.workLinks div img {
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+
+div h3 {
+    position: relative;
+
+}
+
+img:hover {
+    opacity: 1;
 }
