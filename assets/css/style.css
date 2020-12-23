@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bColor: slategrey;
+}
+
 /* Body styling */
 
 body {
@@ -12,7 +16,7 @@ body {
 /* header styling */
 
 header {
-    background-color: slategrey;
+    background-color: var(--bColor);
     padding: 35px 20px;
 }
 
@@ -20,13 +24,13 @@ header h1 {
     font-weight: bold;
     margin: 0;
     display: inline;
-    background-color: cornsilk;
-    width: 30%;
+    
 }
 
 header a {
     text-decoration: none;
     color: black;
+    border-bottom: 2px black solid;
 }
 
 header nav {
@@ -37,9 +41,47 @@ header nav {
 header ul li {
     display: inline;
 }
+
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 15px;
+}
 /* hero styling */
 
 .hero {
     display: flex;
+    background-image: url(../images/clouds.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
 
+.hero h3 {
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    background-color: var(--bColor);
+    padding: 7px;
+}
+
+/* About me */
+
+/* Work class */
+
+.workLinks {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+}
+
+.workLinks div {
+    display: flex;
+    justify-content: right;
+    align-items: baseline;
+    background-color: var(--bColor);
+    border: 3px solid var(--bColor);
 }
