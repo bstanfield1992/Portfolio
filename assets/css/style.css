@@ -77,7 +77,9 @@ header nav ul li a {
 
 .catagory h2 {
     float: left;
+    text-align: right;
     padding: 10px;
+    width: 120px;
 }
 
 .catagory div {
@@ -88,15 +90,12 @@ header nav ul li a {
 }
 
 .catagory p {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /* Work class */
 
 
-.catagory h2 {
-    padding: 20px;
-}
 .workLinks {
     display: grid;
     grid-template-columns: repeat(3, 250px);
@@ -123,7 +122,6 @@ header nav ul li a {
 .workLinks div {
     position: relative;
     background-color: var(--bColor);
-    /* border: 3px solid var(--bColor); */
 }
 
 .workLinks div img {
@@ -151,7 +149,8 @@ header nav ul li a {
 
 .contact-list li {
     display: inline;
-    padding: 20px;
+    font-size: 20px;
+    padding: 25px;
 }
 
 .contact-list li a {
