@@ -133,7 +133,6 @@ header nav ul li a {
     margin-right: auto;
     width: 100%;
     height: 100%;
-    opacity: .5;
 }
 
 .workLinks div h3 {
@@ -146,8 +145,17 @@ header nav ul li a {
 
 @media screen and (min-width: 1135px) {
 
-.workLinks img:hover {
+.workLinks div img:hover {
     opacity: 1;
+}
+
+.workLinks div img {
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
 }
 
 }
