@@ -144,9 +144,15 @@ header nav ul li a {
     padding: 10px;
 }
 
+@media screen and (min-width: 1135px) {
+
 .workLinks img:hover {
     opacity: 1;
 }
+
+}
+
+
 
 /* contact styling */
 
