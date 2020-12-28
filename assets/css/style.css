@@ -33,6 +33,7 @@ header a {
     text-decoration: none;
     color: black;
     border-bottom: 2px black solid;
+    font-weight: bold;
 }
 
 header nav {
