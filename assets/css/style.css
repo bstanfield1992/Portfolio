@@ -6,6 +6,7 @@
 
 :root {
     --bColor: slategrey;
+    --textColor: white;
 }
 
 /* Body styling */
@@ -79,7 +80,7 @@ header nav ul li a {
     float: left;
     text-align: right;
     padding: 10px;
-    width: 120px;
+    width: 10%;
 }
 
 .catagory div {
@@ -87,6 +88,7 @@ header nav ul li a {
     border-left: 2px var(--bColor) solid;
     text-align: left;
     padding: 10px;
+    width: 90%;
 }
 
 .catagory p {
@@ -100,7 +102,7 @@ header nav ul li a {
     display: grid;
     grid-template-columns: repeat(3, 250px);
     grid-template-rows: repeat(3, 200px);
-    grid-gap: 20px;
+    grid-gap: 10px;
     grid-auto-flow: dense;
 }
 
@@ -156,4 +158,11 @@ header nav ul li a {
 .contact-list li a {
     text-decoration: none;
     color: black;
+}
+
+
+@media screen and (max-width: 1135px) {
+    .contact-list li {
+        display: block;
+    }
 }
