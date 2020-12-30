@@ -163,6 +163,8 @@ header nav ul li a {
 }
 
 
+/* changes for if they are looking on a tablet or phone */
+
 @media screen and (max-width: 1135px) {
     .contact-list li {
         display: block;
